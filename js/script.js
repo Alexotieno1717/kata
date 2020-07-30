@@ -30,3 +30,17 @@ function createPhoneNumber(numbers){
   return phoneNumber
 }
 
+//Wenesday Kata
+//Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+//It should remove all values from list a, which are present in list b.
+//link - https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript
+
+function arrayDiff(a, b) {
+  var result = [];
+  for(var i = 0; i < a.length; i++){
+    if(b.indexOf(a[i]) === -1){
+      result.push(a[i])
+    }
+  }
+  return result
+}
